@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Good Eats Meal Planner</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Bootstrap CSS (You can link directly to the CDN if you don't have a local file) -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Welcome To Good Eats!</h1>
+
+    <!-- Meal Plan Form -->
+    <form id="meal-planner-form" class="w-25 mx-auto">
+      <div class="form-group">
+        <label for="budget">I can spend</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="budget-addon">$</span>
+          </div>
+          <select id="budget" class="form-control" aria-describedby="budget-addon">
+            <option value="">Select Budget</option>
+            <option value="15" selected>15</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="calories">Calories</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="calories-addon">Calories</span>
+          </div>
+          <select id="calories" class="form-control" aria-describedby="calories-addon">
+            <option value="">Select Calories</option>
+            <option value="1500" selected>1500</option>
+            <option value="2000">2000</option>
+            <option value="2500">2500</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="days">Number of Days</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="days-addon">Days</span>
+          </div>
+          <select id="days" class="form-control" aria-describedby="days-addon">
+            <option value="">Select Number of Days</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3" selected>3</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="diet">Diet Type</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="diet-addon">Diet</span>
+          </div>
+          <select id="diet" class="form-control" aria-describedby="diet-addon">
+            <option value="">Select Diet</option>
+            <option value="vegan">Vegan</option>
+            <option value="glutenFree">Gluten-Free</option>
+            <option value="omnivore" selected>Omnivore</option>
+          </select>
+        </div>
+      </div>
+
+      <button type="button" class="btn btn-primary btn-block" onclick="generateMeals()">Generate Meals</button>
+    </form>
+
+    <!-- Meal Results Section -->
+    <div id="mealContainer" class="mt-5">
+      <!-- Generated meals will appear here -->
+    </div>
+      <!-- Extra Sections -->
+      <div class="row mt-5">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">📚 Resources</h5>
+              <p class="card-text">Tips, nutrition guides, and cooking videos to support your meal planning journey.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">View Resources</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">📋 Meal Tracker</h5>
+              <p class="card-text">Track what you’ve eaten and plan ahead. Stay consistent and hit your goals.</p>
+              <a href="#" class="btn btn-outline-success btn-sm">Open Tracker</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">🖨️ Print Recipes</h5>
+              <p class="card-text">Download or print your weekly recipes for easy access in the kitchen.</p>
+              <a href="#" class="btn btn-outline-secondary btn-sm">Print Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Food Insecurity Section -->
+<div class="food-insecurity-section">
+  <h2>Food Insecurity</h2>
+  <p>If you or someone you know is experiencing food insecurity, here are some helpful resources:</p>
+  <ul class="food-insecurity-links">
+    <li><a href="https://www.middlesexcountynj.gov/government/departments/department-of-community-services/replenish/need-food-assistance" target="_blank">NJ Food Pantry</a></li>
+    <li><a href="https://www.kean.edu/cougar-pantry" target="_blank">Kean Pantry</a></li>
+    <li><a href="https://www.nj.gov/humanservices/njsnap/" target="_blank">NJ Snap</a></li>
+  </ul>
+</div>
+
+  <!-- Bootstrap JS and dependencies (jQuery and Popper.js) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Custom JavaScript for Meal Generation -->
+  <script src="mealPlanner.js"></script>
+</body>
+</html>

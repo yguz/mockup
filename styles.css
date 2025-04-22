@@ -1,0 +1,197 @@
+/* Basic styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+/* Form styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4cae4c;
+}
+
+/* Meal Container and Cards */
+#mealContainer {
+  margin-top: 30px;
+}
+
+.day-section {
+  margin-bottom: 40px;
+}
+
+.day-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.meal-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.meal-card {
+  width: 250px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.meal-card:hover {
+  transform: translateY(-10px);
+}
+
+.meal-card img {
+  width: 100%;
+  border-radius: 6px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.meal-card h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.meal-card p {
+  color: #777;
+  font-size: 1rem;
+}
+
+.meal-card p strong {
+  color: #333;
+}
+
+/* Layout for form-group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styling for dollar sign in budget section */
+.dollar-sign {
+  margin-bottom: 10px; /* Added spacing to separate the dollar sign from the select */
+  font-size: 1.2rem;
+}
+
+button {
+  margin-top: 20px; /* Added margin to ensure button has space below */
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  font-size: 14px; /* Adjust the font size of the label and input */
+}
+
+.dollar-sign {
+  margin-right: 5px; /* Space between the dollar sign and select */
+}
+
+select, input[type="text"], input[type="number"] {
+  width: 80px; /* Adjust width to make input smaller */
+  font-size: 14px; /* Smaller font size */
+  padding: 5px; /* Adjust padding to make it smaller */
+  border-radius: 4px; /* Optional: adds a slight border radius for a rounded look */
+  border: 1px solid #ccc; /* Optional: border styling */
+}
+
+label {
+  font-size: 14px; /* Smaller font size for the label */
+}
+
+
+/* Food Insecurity Section */
+.food-insecurity-section {
+  margin-top: 40px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.food-insecurity-section h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.food-insecurity-section p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.food-insecurity-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.food-insecurity-links li {
+  margin-bottom: 10px;
+}
+
+.food-insecurity-links a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 1.1rem;
+}
+
+.food-insecurity-links a:hover {
+  text-decoration: underline;
+}
