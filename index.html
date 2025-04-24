@@ -15,64 +15,82 @@
     <!-- Meal Plan Form -->
     <form id="meal-planner-form" class="w-25 mx-auto">
       <div class="form-group">
-        <label for="budget">I can spend</label>
+        <label for="budget">My budget for this meal plan is</label>
         <div class="input-group">
           <div class="input-group-prepend">
             <span class="input-group-text" id="budget-addon">$</span>
           </div>
           <select id="budget" class="form-control" aria-describedby="budget-addon">
-            <option value="">Select Budget</option>
-            <option value="15" selected>15</option>
-            <option value="20">20</option>
-            <option value="25">25</option>
+            <option value="" selected>Select Budget</option>
+            <option value="50>">50</option>
+            <option value="100">100</option>
+            <option value="150">150</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group"> 
+        <label for="avalibility">The time I can spend on meal plans is </label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+          </div>
+          <select id="avalibility" class="form-control" aria-describedby="avalibility-addon">
+            <option value="" selected>Select Avalibility</option>
+            <option value="50>">Little to no (At most 10 minutes) </option>
+            <option value="150">A lot (More than half an hour ) </option>
+            <option value="100">No time</option>
           </select>
         </div>
       </div>
 
       <div class="form-group">
-        <label for="calories">Calories</label>
+        <label for="calories">My limit on daily calories are</label>
         <div class="input-group">
           <div class="input-group-prepend">
-            <span class="input-group-text" id="calories-addon">Calories</span>
+            <span class="input-group-text" id="calories-addon"> Calories</span>
           </div>
           <select id="calories" class="form-control" aria-describedby="calories-addon">
-            <option value="">Select Calories</option>
-            <option value="1500" selected>1500</option>
-            <option value="2000">2000</option>
-            <option value="2500">2500</option>
+            <option value="" selected>Select Avalibility</option>
+            <option value="1500">1600 (Calories the average woman needs a day)</option>
+            <option value="2000">2000 (Calories the average man needs a day)</option>
+            <option value="2500">3000 (Calories the average athlete needs a day)</option>
           </select>
         </div>
       </div>
 
       <div class="form-group">
-        <label for="days">Number of Days</label>
+        <label for="days">The length this mealplan should last is</label>
         <div class="input-group">
           <div class="input-group-prepend">
-            <span class="input-group-text" id="days-addon">Days</span>
           </div>
           <select id="days" class="form-control" aria-describedby="days-addon">
-            <option value="">Select Number of Days</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3" selected>3</option>
+            <option value="" selected>Select Number of Days</option>
+            <option value="1">1 day</option>
+            <option value="2">2 days</option>
+            <option value="3">3 days</option>
           </select>
         </div>
       </div>
 
       <div class="form-group">
-        <label for="diet">Diet Type</label>
+        <label for="diet">The type of diet I want is</label>
         <div class="input-group">
           <div class="input-group-prepend">
-            <span class="input-group-text" id="diet-addon">Diet</span>
           </div>
           <select id="diet" class="form-control" aria-describedby="diet-addon">
-            <option value="">Select Diet</option>
-            <option value="vegan">Vegan</option>
-            <option value="glutenFree">Gluten-Free</option>
-            <option value="omnivore" selected>Omnivore</option>
+            <option value=""selected>Select Diet</option>
+            <option value="vegan">Vegan (No animal food/products)</option>
+            <option value="glutenFree">Gluten-Free (No wheat, barley, nor rye)</option>
+            <option value="omnivore" >Omnivore (Both plant and animal food)</option>
           </select>
         </div>
       </div>
+
+      <body>
+
+        <p>Before generating, fill in the blank with what you prefer for your meal plan! </p>
+  
+      </body>
 
       <button type="button" class="btn btn-primary btn-block" onclick="generateMeals()">Generate Meals</button>
     </form>

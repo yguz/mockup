@@ -254,11 +254,13 @@ const mealData = {
 
 function generateMeals() {
   const calories = document.getElementById('calories').value;
+  const budget = document.getElementById('budget').value;
   const days = document.getElementById('days').value;
   const dietType = document.getElementById('diet').value;
+  const avali = document.getElementById('avalibility').value;
 
-  if (!calories || !days || !dietType) {
-    alert('Please select calories, number of days, and diet type.');
+  if (!budget ||!calories || !days || !dietType || !avalibility) {
+    alert('Please select your budget, avalibility, calorie limit, length, and diet type');
     return;
   }
 
